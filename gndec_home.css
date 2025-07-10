@@ -1,0 +1,236 @@
+:root {
+  --primary: #003366;
+  --accent: #ffcc00;
+  --light-bg: #f5f7fa;
+  --soft-blue: #e6f0ff;
+  --soft-gray: #f9fbfc;
+}
+
+section {
+  background-color: #ffffff;
+}
+
+section:nth-of-type(odd) {
+  background-color: #ffffff;
+}
+
+section:nth-of-type(even) {
+  background-color: var(--soft-blue);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+}
+.navbar-brand img {
+  height: 50px;
+}
+.hero img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+.section-title {
+  font-family: "Montserrat", sans-serif;
+  color: var(--primary);
+  font-size: 2rem;
+  margin: 60px 0 20px;
+  text-align: center;
+}
+footer {
+  background: var(--primary);
+  color: #f0f0f0;
+}
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.card-img-top {
+  width: 100%;
+  height: 20vh;
+  object-fit: cover;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.card-body {
+  flex-grow: 1;
+}
+.nav-link:hover {
+  color: var(--accent) !important;
+  transition: color 0.3s ease;
+}
+#infoBtn {
+  opacity: 0.85;
+  border-radius: 0 4px 4px 0;
+}
+#infoBtn:hover {
+  opacity: 1;
+}
+.offcanvas-body ul a:hover {
+  color: var(--accent);
+}
+section#departments {
+  background-color: var(--soft-gray);
+  padding: 80px 0;
+}
+
+.department-card {
+  background-color: #fff;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.department-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.department-card .card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.department-card .card-body {
+  padding: 1.5rem;
+}
+
+.department-card .card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+.department-card .card-text {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+#infoBtn {
+  background: linear-gradient(to bottom, #007bff, #0056b3);
+  border: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+#infoBtn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+}
+.offcanvas ul a {
+  color: #003366;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.offcanvas ul a:hover {
+  color: #ffcc00;
+}
+.navbar {
+  transition: box-shadow 0.3s ease;
+}
+.navbar.fixed-top {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar .navbar-brand img {
+  transition: height 0.3s ease;
+  height: 50px;
+}
+.navbar.navbar-shrink .navbar-brand img {
+  height: 40px;
+}
+.navbar {
+  transition: all 0.3s ease;
+  padding: 1rem 1rem;
+}
+
+.navbar.navbar-shrink {
+  padding: 0.4rem 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+/* Base Navbar Style */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 1rem 1rem;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(8px);
+}
+
+/* On Scroll - Shrink Navbar */
+.navbar.navbar-shrink {
+  background-color: #ffffff;
+  padding: 0.4rem 1rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Resize */
+.navbar .navbar-brand img {
+  transition: height 0.3s ease;
+  height: 50px;
+}
+.navbar.navbar-shrink .navbar-brand img {
+  height: 40px;
+}
+
+footer {
+  background: linear-gradient(to right, #002244, #003366);
+  color: #f0f0f0;
+  margin-top: auto;
+}
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+footer .form-control,
+footer .btn {
+  border-radius: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recruiter-logo {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+  gap: 100px;
+}
+.swiper-recruiters {
+  padding: 20px 0;
+}
+.hover-shadow:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
